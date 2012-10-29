@@ -113,6 +113,8 @@ dataewan:
 	@make
 	@echo "Making bootstrap"
 	@make -B bootstrap
+	@cp js/dataewan.js bootstrap/js/
 	@echo "Copying files over to dataewan"
 	@rm -rf ~/dev/pelican-themes/dataewan-bootstrap/static/*
 	@cp -r bootstrap/* ~/dev/pelican-themes/dataewan-bootstrap/static/
+
