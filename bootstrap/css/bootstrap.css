@@ -5786,3 +5786,7 @@ header#banner.body a {
   color: #ffffff;
   text-align: middle;
 }
+
+table {
+  margin: auto;
+}
