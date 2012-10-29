@@ -29,6 +29,8 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+@dataewancolor:			#0E5352;
+
 
 // Scaffolding
 // -------------------------
@@ -38,7 +40,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @dataewancolor;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -49,11 +51,17 @@
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @sansFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+// Ewan
+// Import a google font that I want to use
+
+@import url(http://fonts.googleapis.com/css?family=Cabin:700);
+
+@headingsFontFamily:    "Cabin", Arial, sans-serif; // Use google font.
+//@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 

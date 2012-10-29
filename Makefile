@@ -106,3 +106,13 @@ haunt:
 
 
 .PHONY: docs watch gh-pages
+
+
+dataewan:
+	@echo "Making"
+	@make
+	@echo "Making bootstrap"
+	@make -B bootstrap
+	@echo "Copying files over to dataewan"
+	@rm -rf ~/dev/pelican-themes/dataewan-bootstrap/static/*
+	@cp -r bootstrap/* ~/dev/pelican-themes/dataewan-bootstrap/static/
